@@ -34,6 +34,9 @@ Make a `.gemini/skills` folder in your project and put the extracted skills fold
 
 <img width="699" height="496" alt="image" src="https://github.com/user-attachments/assets/66c7dd1f-54ae-4f5d-9830-dd032cfb9e1b" />
 
+#### Conditionally receive payments (NOTE: only supported by Alby Hub)
+
+> Create a JS console app that creates a hold invoice of $1 and asks the user to provide a lightning address and choose heads or tails. Once the hold invoice is accepted, flip a coin. If the user guessed correctly, cancel the hold invoice and pay the user $1 to their lightning address. If the user guessed incorrectly, settle the hold invoice. The NWC_URL is in the .env file.
 
 ### Frontend Apps
 
@@ -42,7 +45,6 @@ Make a `.gemini/skills` folder in your project and put the extracted skills fold
 > Create a single page HTML app that listens to incoming payments, and each time one comes in, shows a confetti animation and the payment amount and message. It should also have a QR code of the receiving lightning address that should be displayed on the corner of the screen so people watching can easily send payments. When I first open the page it should prompt me for a NWC connection secret so it can connect to my wallet to listen for payments, and also extract the lightning address from the NWC connection secret for the QR code.
 
 <img width="1432" height="806" alt="image" src="https://github.com/user-attachments/assets/979a3034-99ac-4481-8e32-9750486eb996" />
-
 
 ## Development
 

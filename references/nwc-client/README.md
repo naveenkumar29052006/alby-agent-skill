@@ -31,4 +31,5 @@ Make sure to read the [NWC Client typings](./nwc.d.ts) when using any of the bel
 
 - [subscribe to notifications of sent or received payments](./notifications.md)
 - [How to pay a BOLT-11 lightning invoice](pay-invoice.md)
-- For some environments, a [websocket polyfill](./references/websocket-polyfill.md) may be required
+- [How to create, settle and cancel HOLD invoices for conditional payments](hold-invoices.md)
+- [A websocket polyfill for NodeJS < 22](./references/websocket-polyfill.md)
