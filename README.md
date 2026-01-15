@@ -24,6 +24,10 @@ Make a `.claude/skills` folder in your project and put the extracted skills fold
 
 Make a `.gemini/skills` folder in your project and put the extracted skills folder there ([see other options](https://geminicli.com/docs/cli/skills/#skill-discovery-tiers))
 
+### Roo Code
+
+Make a `.roo/skills` folder in your project and put the extracted skills folder there ([see other options](https://docs.roocode.com/features/skills#1-choose-a-location))
+
 ## Example prompts
 
 ### Console Apps
