@@ -6,6 +6,12 @@ This repository contains an [agent skill](https://agentskills.io/specification) 
 
 ## Getting Started
 
+### 🚀 Install with single command
+
+`npx skills i getAlby/alby-agent-skill`
+
+### Manual Install
+
 [Download](https://github.com/getAlby/alby-agent-skill/archive/refs/heads/master.zip) this repository and extract it, then follow instructions for your specific agent.
 
 > Double check the skill is activated by asking your agent "What Skills are available?". It should include "Alby Agent Skill"
