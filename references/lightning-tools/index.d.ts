@@ -258,6 +258,13 @@ declare const fetchWithL402: (url: string, fetchArgs: RequestInit, options: {
     store?: KVStorage;
 }) => Promise<Response>;
 
+interface FiatCurrency {
+    code: string;
+    name: string;
+    symbol: string;
+    priority: number;
+}
+declare const getFiatCurrencies: () => Promise<FiatCurrency[]>;
 declare const getFiatBtcRate: (currency: string) => Promise<number>;
 declare const getFiatValue: ({ satoshi, currency, }: {
     satoshi: number | string;
@@ -273,5 +280,5 @@ declare const getFormattedFiatValue: ({ satoshi, currency, locale, }: {
     locale: string;
 }) => Promise<string>;
 
-export { DEFAULT_PROXY, Invoice, LN_ADDRESS_REGEX, LightningAddress, MemoryStorage, NoStorage, decodeInvoice, fetchWithL402, fromHexString, generateZapEvent, getEventHash, getFiatBtcRate, getFiatValue, getFormattedFiatValue, getSatoshiValue, isUrl, isValidAmount, parseKeysendResponse, parseL402, parseLnUrlPayResponse, parseNostrResponse, sendBoostagram, serializeEvent, validateEvent };
-export type { Boost, BoostArguments, BoostOptions, Event, InvoiceArgs, KVStorage, KeySendRawData, KeysendResponse, LUD18PayerData, LUD18ServicePayerData, LnUrlPayResponse, LnUrlRawData, NostrProvider, NostrResponse, RequestInvoiceArgs, SuccessAction, WeblnBoostParams, ZapArgs, ZapOptions };
+export { DEFAULT_PROXY, Invoice, LN_ADDRESS_REGEX, LightningAddress, MemoryStorage, NoStorage, decodeInvoice, fetchWithL402, fromHexString, generateZapEvent, getEventHash, getFiatBtcRate, getFiatCurrencies, getFiatValue, getFormattedFiatValue, getSatoshiValue, isUrl, isValidAmount, parseKeysendResponse, parseL402, parseLnUrlPayResponse, parseNostrResponse, sendBoostagram, serializeEvent, validateEvent };
+export type { Boost, BoostArguments, BoostOptions, Event, FiatCurrency, InvoiceArgs, KVStorage, KeySendRawData, KeysendResponse, LUD18PayerData, LUD18ServicePayerData, LnUrlPayResponse, LnUrlRawData, NostrProvider, NostrResponse, RequestInvoiceArgs, SuccessAction, WeblnBoostParams, ZapArgs, ZapOptions };

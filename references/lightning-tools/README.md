@@ -2,7 +2,7 @@
 
 ## How to install
 
-Install the NPM package `@getalby/lightning-tools`. The latest version is 6.0.0.
+Install the NPM package `@getalby/lightning-tools`. The latest version is 6.1.0.
 
 ## Units
 
