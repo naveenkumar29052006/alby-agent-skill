@@ -8,8 +8,6 @@ This repository contains an [agent skill](https://agentskills.io/specification) 
 
 ### 🚀 Install with single command
 
-⚠️ the below command may not work as expected. `npx skills` is very new. If you have problems using the skill, try manual install or create an issue to let us know.
-
 `npx skills add getAlby/alby-agent-skill`
 
 ### Manual Install
