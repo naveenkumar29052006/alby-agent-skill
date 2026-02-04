@@ -35,6 +35,10 @@ or
 - Payment UI for accepting payments via QR code or connected wallet
 - Supports multiple wallet connectors: Alby Hub, NWC, LNbits, Lightning Node Connect, and more
 
+## Units
+
+Unlike NWC, WebLN operates on sats, not millisats. (1000 millisats = 1 satoshi)
+
 ## Initialization
 
 ```ts
