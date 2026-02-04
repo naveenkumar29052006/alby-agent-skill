@@ -95,6 +95,19 @@ const provider = await requestProvider();
 const { preimage } = await provider.sendPayment("lnbc...");
 const { paymentRequest } = await provider.makeInvoice({ amount: 1000 });
 const balance = await provider.getBalance?.();
+
+```
+
+#### Check the provider kind to get access to the underlying provider
+
+```ts
+import { WebLNProviders, requestProvider } from "@getalby/bitcoin-connect";
+
+const provider = await requestProvider();
+
+if (provider instanceof WebLNProviders.NostrWebLNProvider) {
+  provider.client.nostrWalletConnectUrl; // access the connection secret
+}
 ```
 
 ### Programmatic connection
