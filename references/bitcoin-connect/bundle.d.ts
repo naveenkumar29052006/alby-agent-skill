@@ -272,7 +272,6 @@ export declare class SendPayment extends SendPayment_base {
 	_hasCopiedInvoice: boolean;
 	_isPaying: boolean;
 	_showQR: boolean;
-	//_qr: QRCode | null;
 	invoice?: string;
 	paid?: boolean;
 	paymentMethods: PaymentMethods;
@@ -492,6 +491,10 @@ export declare function isConnected(): boolean;
  * @param config
  */
 export declare function init(config?: BitcoinConnectConfig): void;
+/**
+ * Refresh the balance of the connected wallet
+ */
+export declare function refreshBalance(): void;
 /**
  * Programmatically launch the Bitcoin Connect modal
  */
