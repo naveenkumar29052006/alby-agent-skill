@@ -121,6 +121,17 @@ connectNWC("nostr+walletconnect://...");
 disconnect();
 ```
 
+### Refresh the balance
+
+If you make a payment, the bc-balance component by default will not refresh
+which will lead to the balance being incorrect. In this case a refresh should be triggered:
+
+```ts
+import { refreshBalance } from "@getalby/bitcoin-connect";
+
+refreshBalance();
+```
+
 ## React components
 
 ```tsx

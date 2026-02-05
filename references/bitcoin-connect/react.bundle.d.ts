@@ -211,6 +211,10 @@ export declare function isConnected(): boolean;
  */
 export declare function init(config?: BitcoinConnectConfig): void;
 /**
+ * Refresh the balance of the connected wallet
+ */
+export declare function refreshBalance(): void;
+/**
  * Programmatically launch the Bitcoin Connect modal
  */
 export declare function launchModal(): void;
