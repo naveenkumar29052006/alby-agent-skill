@@ -153,6 +153,9 @@ init({ appName: "My App" });
 <Button />
 
 // Pay button - launches payment modal when clicked
+// NOTE: invoice can optionally be generated after the button is clicked by
+// using the `onClick` event and updating the invoice argument in React
+// or by using setAttribute('invoice') on the bc-pay-button element.
 <PayButton
   invoice="lnbc..."
   onPaid={(response) => console.log("Paid!", response.preimage)}
